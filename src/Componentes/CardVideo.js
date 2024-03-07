@@ -12,8 +12,7 @@ export default function CardVideo({ video, usuario }) {
     <div className="box-pagina-principal" onClick={reproduzVideo}>
       <img src={video.imagem} alt="" />
       <h4>{video.titulo}</h4>
-      <img src={usuario.foto} alt="" />
-      <p>{usuario.nome}</p>
+      <InfosUsuario userImg={usuario.foto} userNome={usuario.nome} />
     </div>
   );
 }
